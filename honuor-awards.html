@@ -22,6 +22,36 @@
             }
         }
 
+        @media (max-width: 576px) {
+            .hero {
+                text-align: center !important;
+                padding-top: 4rem;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero .row {
+                flex-direction: column-reverse;
+            }
+
+            .countdown-box {
+                justify-content: center !important;
+            }
+
+            .count {
+                font-size: 3rem;
+            }
+        }
+
+
         .back-button:hover {
             background-color: gold;
             color: black;
@@ -32,9 +62,12 @@
             position: relative;
             background: url('assets/img/award/background_1.png') no-repeat center center;
             background-size: cover;
-            height: 100vh;
+            min-height: 100vh;
             color: #fff;
+            overflow: hidden;
+            padding: 60px 15px;
         }
+
 
         .hero::before {
             content: "";
@@ -50,7 +83,10 @@
         .hero .container {
             position: relative;
             z-index: 1;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
         }
+
 
         .hero h1 {
             font-size: 2.5rem;
@@ -66,24 +102,27 @@
 
         .countdown-box {
             display: flex;
-            justify-content: center;
+            justify-content: left;
             flex-wrap: wrap;
             gap: 1rem;
             margin-top: 1rem;
         }
 
         .countdown-box>div {
-            background: #222;
-            border-radius: 8px;
-            padding: 12px 20px;
-            min-width: 80px;
+            background: transparent;
+            border: 2px solid #ffd700;
+            border-radius: 25px;
+            padding: 16px 24px;
+            min-width: 100px;
             text-align: center;
+            color: #fff;
         }
 
         .count {
-            font-size: 2rem;
+            font-size: 5rem;
             font-weight: bold;
-            color: #ffd700;
+            color: #fff;
+            line-height: 1;
         }
 
         .section {
@@ -150,10 +189,10 @@
         </div>
     </nav>
 
-    <section class="hero d-flex justify-content-center align-items-center text-center text-md-start">
+    <section class="hero d-flex align-items-center text-center text-md-start">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4 mb-md-0">
                     <h1>RECOGNIZING BRILLIANCE</h1>
                     <p>Celebrating the success stories of exceptional businesses and professionals.</p>
                     <div class="countdown-box">
@@ -177,6 +216,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="section section-dark who-we-are">
         <div class="container">
@@ -242,7 +282,8 @@
     <footer class="footer text-white text-center py-5">
         <h5>AWARD CEREMONY DETAILS</h5>
         <p>June 27th 2025 – BMICH</p>
-        <div class="countdown-box">
+        <div class="countdown-box"
+            style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
             <div>
                 <div id="days" class="count">00</div><small>Days</small>
             </div>
@@ -255,6 +296,7 @@
         </div>
         <p class="mt-4">Powered By EVER EFFICIANT Business Management (Pvt) Ltd</p>
     </footer>
+
 
     <script>
         const targetDate = new Date("June 27, 2025 00:00:00").getTime();
