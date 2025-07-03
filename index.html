@@ -28,6 +28,9 @@
         .hero-section .hero-slider .hero-single {
             height: 100dvh;
         }
+        #mobile-nav-toggle {
+            z-index: 99999;
+        }
 
         .hero-section .hero-slider .hero-single {
             width: 100dvw;
@@ -83,9 +86,9 @@
                     </a>
                     <div class="mobile-menu-right">
                         <div class="search-btn" style="display: none;">
-                            <button type="button" class="nav-right-link search-box-outer"><i
-                                    class="far fa-search"></i></button>
-                        </div>
+                        <button class="navbar-toggler" type="button" id="mobile-nav-toggle" title="Toggle navigation">
+                            <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
+                        </button>
                         <button class="navbar-toggler" type="button" id="mobile-nav-toggle" style="z-index: 99999;">
                             <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
                         </button>
