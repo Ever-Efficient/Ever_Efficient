@@ -254,18 +254,58 @@
         <div class="container">
             <h2 style="font-size: 2.5rem; font-family: 'Baskerville', serif;">VIDEO GALLERY</h2>
             <div class="row justify-content-center mt-4">
-                <div class="col-md-10 text-center">
+                <div class="col-md-4 text-center mb-3">
                     <div class="ratio ratio-16x9">
-                        <video width="100%" height="auto" controls>
-                            <source src="./assets/videos/event2025.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <iframe width="916" height="515" src="https://www.youtube.com/embed/OruzxN2_94Y"
+                            title="Ever Efficient Business Management | Honor of Business Talent 2025 at BMICH | Samith edirisinghe"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="916" height="515" src="https://www.youtube.com/embed/xcYr2ti-EO0"
+                            title="Ever Efficient Business Management | Honor of Business Talent 2025 at BMICH | Sajitha Anthony"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="916" height="515" src="https://www.youtube.com/embed/ShRLavMZUqQ"
+                            title="Ever Efficient Business Management | Honor of Business Talent 2025 at BMICH | ITN |ITN News"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
+
+            <!-- Hidden Extra Videos -->
+            <div class="row justify-content-center mt-3" id="moreVideos" style="display: none;">
+                <div class="col-md-4 text-center mb-3">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="916" height="515" src="https://www.youtube.com/embed/epN_5K0WNZs"
+                            title="Ever Efficient Business Management | Honor of Business Talent 2025 at BMICH | Palitha Silva"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-center">
+                <button id="viewAllBtn" class="btn btn-primary mt-4"
+                    style="background: transparent; color: gold; border: 2px solid gold; border-radius: 25px;"
+                    onclick="document.getElementById('moreVideos').style.display='flex'; this.style.display='none';">
+                    View All
+                </button>
+            </div>
         </div>
     </section>
-
 
     <section class="section section-dark text-center invitation-section">
         <img src="./assets/img/award/award_image.png" alt="Award Image" class="mt-4 img-fluid mx-auto d-block" />
